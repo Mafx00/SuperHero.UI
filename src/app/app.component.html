@@ -13,7 +13,9 @@
       <td>{{ hero.firstName }}</td>
       <td>{{ hero.lastName }}</td>
       <td>{{ hero.place }}</td>
-      <td></td>
+      <td><button (click)="editHero(hero)">Edit</button></td>
     </tr>
   </tbody>
 </table>
+
+<app-edit-hero [hero]="heroToEdit"></app-edit-hero>
